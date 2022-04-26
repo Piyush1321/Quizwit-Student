@@ -1,0 +1,55 @@
+.navbar {
+    background: white;
+    overflow-y: auto;
+    border-top-right-radius: 10px;
+    width: 250px;
+}
+.navbar > .links {
+    overflow: hidden;
+}
+.navbar > .links > a {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    white-space: nowrap;
+}
+.link-section {
+    padding-left: 15px;
+    color: rgb(0, 0, 0, 0.3);
+    margin-top: 10px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar-inactive-link:hover {
+    background: rgb(238, 104, 51, 0.1);
+}
+.navbar > .links > a > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 50px;
+}
+.navbar > .links > a > div:nth-child(2) {
+    flex: 1;
+    font-size: 14px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.inactive {
+    background: white;
+    color: rgb(238, 104, 51);
+}
+.inactive:hover {
+    background: rgb(238, 104, 51, 0.1);
+}
+.active {
+    background: rgb(238, 104, 51);
+    color: rgb(233, 233, 233);
+}
+.active:hover {
+    background: rgb(238, 104, 51);
+    color: rgb(233, 233, 233);
+}

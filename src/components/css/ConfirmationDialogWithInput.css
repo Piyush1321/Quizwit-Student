@@ -1,0 +1,45 @@
+#confirmation-dialog-with-input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: white;
+    color: rgb(237, 237, 237);
+    padding: 20px;
+    width: 500px;
+    min-height: 300px;
+    display: none;
+    z-index: 50;
+    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 70%);
+}
+#confirmation-dialog-with-input h4 {
+    color: rgb(227 80 80);
+    font-weight: normal;
+    font-size: 24px;
+}
+#confirmation-dialog-with-input p {
+    color: rgb(50, 50, 50);
+    font-size: 13px;
+} 
+#confirmation-dialog-with-input .danger {
+    color: rgb(227 80 80);
+}
+#confirmation-dialog-with-input #delete-exam-title {
+    color: rgb(8, 156, 255);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#confirmation-dialog-with-input i {
+    font-size: 25px;
+    color: rgb(227 80 80);
+}
+#delete-me {
+    height: 40px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}

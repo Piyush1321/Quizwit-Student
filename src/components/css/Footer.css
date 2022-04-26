@@ -1,0 +1,26 @@
+.main-footer-container {
+    display: flex;
+    margin-top: 10px;
+}
+.navbar-toggle-btn {
+    height: 40px;
+    width: 50px;
+    margin-right: 10px;
+    background: rgb(238, 104, 51);
+    color: rgb(233, 233, 233);
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer {
+    height: 40px;
+    color: rgb(233, 233, 233);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3a3a3a;
+    border-top-left-radius: 10px;
+    flex: 1;
+}

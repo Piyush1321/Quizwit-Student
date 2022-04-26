@@ -1,0 +1,95 @@
+#attempts-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 900px;
+    z-index: 49;
+    background: white;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
+#attempts-dialog h3 {
+    font-weight: normal;
+    font-size: 14px;
+    background: white;
+    width: 100%;
+    padding-bottom: 10px;
+}
+#attempts-dialog > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#attempts-dialog table {
+    width: 100%;
+}
+#attempts-dialog table thead {
+    position: sticky;
+    top: 0px;
+    background: white;
+    margin-top: -1px;
+}
+#attempts-dialog > div > div:nth-child(1) {
+    overflow: auto;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+#exam-name-section-reference {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 12px;
+    z-index: 49;
+}
+#attempts-dialog .action-btn-container {
+    display: flex;
+    justify-content: center;
+}
+#attempts-dialog .action-btn-container i {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+#attempts-dialog .action-btn-container i:hover {
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+}
+#attempts-dialog .action-btn-container i:nth-child(1) {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+#attempts-dialog .action-btn-container i:nth-child(4) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.table-border {    
+    border-bottom: 0.5px solid rgb(55 55 55 / 40%);
+    z-index: 49;
+    position: absolute;
+    width: 100%;
+    top: 27px;
+    left: 0px;
+    height: 2px;
+    background: white;
+}
+.bg-refresh-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background: rgb(227 132 74);
+    color: white;
+    font-size: 11px;
+}

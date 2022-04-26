@@ -1,0 +1,19 @@
+.settings {
+    display: flex;
+}
+.settings > div {
+    flex: 1;
+    padding: 0px 10px;
+    min-height: 500px;
+}
+.settings > div:nth-child(1) {
+    border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.settings  .heading {
+    color:rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.settings p {
+    font-size: 15px;
+}
