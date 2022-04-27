@@ -29,12 +29,12 @@ function Navbar() {
                             icon='fas fa-box'
                             id='view-attempt-nav-link'
                         />
-                        <div className='link-section'>General</div>
+                        {/* <div className='link-section'>General</div>
                         <NavLinkCustom 
                             description='Settings'
                             route='/settings'
                             icon='fas fa-cog'
-                        />
+                        /> */}
                         {/* <NavLinkCustom 
                             description='Program Editor'
                             route='/ace-editor'

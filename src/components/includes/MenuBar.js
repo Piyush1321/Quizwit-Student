@@ -31,24 +31,24 @@ function MenuBar(props) {
         <div id="menubar" className='menubar'>
             <p className='primary' >Logged in as <br/> <span style={{fontWeight: "bold"}}>{props.userType}</span></p>
             <div className='links'>
-                <MenuLink 
+                {/* <MenuLink 
                 route='/profile'
                 description='Profile'
                 icon='fas fa-user-circle'
                 class=''
-                />
-                <MenuLink 
+                /> */}
+                {/* <MenuLink 
                 route='/backup'
                 description='Backup'
                 icon='fas fa-sync-alt'
                 class=''
-                />
-                <div onClick={changePassword}>
+                /> */}
+                {/* <div onClick={changePassword}>
                     <div>
                         <i className='fas fa-lock'></i>
                     </div>
                     <div>Change Password</div>
-                </div>
+                </div> */}
                 <div onClick={logout}>
                     <div>
                         <i className='fas fa-sign-out-alt'></i>
