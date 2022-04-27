@@ -15,6 +15,7 @@ import ChangePasswordDialog from './components/includes/ChangePasswordDialog';
 import Profile from './components/Profile';
 import ScheduledExams from './components/ScheduledExams';
 import Exams from './components/Exams';
+import FullReport from './components/FullReport';
 
 class App extends React.Component {
 
@@ -80,6 +81,7 @@ class App extends React.Component {
                         <Route path='/' element={<Dashboard />} setLogin={this.setLogin}/>
                         <Route path='/scheduled-exams' element={<ScheduledExams />} />
                         <Route path='/attempted-exams' element={<Exams />} />
+                        <Route path='/full-report' element={<FullReport />} />
                         
                       </Routes>
                       

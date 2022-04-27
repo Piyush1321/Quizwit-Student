@@ -19,7 +19,24 @@ class Attempts extends React.Component {
         document.getElementById('route-overlay').style.display = 'none';
     }
     viewFullReport = () => {
-
+        let attempts = document.getElementsByName('attemptId');
+        let attemptId = null;
+        for(let i=0; i<attempts.length; i++) {
+            if(attempts[i].checked) {
+                attemptId = attempts[i].value;
+                localStorage.setItem("AttemptId", attemptId);
+                break;
+            }
+        }
+        if(attemptId) {
+            let a = document.createElement('a');
+            a.href = 'full-report';
+            a.target = '_blank';
+            a.click();
+        }
+        else {
+            Flash.message('Select attempt', 'bg-primary');
+        }
     }
     componentDidMount = () => {
 
