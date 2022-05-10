@@ -42,6 +42,7 @@ class Dashboard extends React.Component {
     }
 
     componentDidMount = () => {
+        document.getElementById('route-overlay').style.display = 'none';
         this.fetchDetails();
     }
 

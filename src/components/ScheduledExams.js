@@ -51,7 +51,8 @@ class ScheduledExams extends React.Component {
         if(examId) {
             let a = document.createElement('a');
             a.href = 'http://localhost:3002/' + examId;
-            a.target = '_blank';
+            // a.target = '_blank';
+            this.props.logout();
             a.click();
         }
         else {
@@ -60,6 +61,7 @@ class ScheduledExams extends React.Component {
     }
 
     componentDidMount = () => {
+        document.getElementById('route-overlay').style.display = 'none';
         this.fetchExams();
     }
 

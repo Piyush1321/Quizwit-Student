@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import Request from './services/Request';
@@ -48,6 +49,9 @@ function Signin(props) {
         }
 
     }
+    
+    useEffect(() => {
+    }, []);
 
     return (
         <div className='signin-cover cover flex-row jc-c ai-c'>

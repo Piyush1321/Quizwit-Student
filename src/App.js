@@ -46,7 +46,19 @@ class App extends React.Component {
       changePassword: value
     });
   }
-
+  logout = () => {
+    let url = "http://localhost:8080/QuizWit/Logout?user=3";
+    Request.get(url)
+    .then((res) => {
+        if(res.success) {
+            this.setLogin(false);
+            Flash.message(res.success, 'bg-success');
+        }
+        else {
+            Flash.message(res.error, 'bg-danger');
+        }
+    })
+  }
   componentDidMount = () => {
     let url = 'http://localhost:8080/QuizWit/LoginStudent';
     let data = {};
@@ -79,7 +91,7 @@ class App extends React.Component {
 
                       <Routes>
                         <Route path='/' element={<Dashboard />} setLogin={this.setLogin}/>
-                        <Route path='/scheduled-exams' element={<ScheduledExams />} />
+                        <Route path='/scheduled-exams' element={<ScheduledExams logout={this.logout}/>} />
                         <Route path='/attempted-exams' element={<Exams />} />
                         <Route path='/full-report' element={<FullReport />} />
                         

@@ -18,8 +18,6 @@ function MenuBar(props) {
             if(res.success) {
                 props.setLogin(false);
                 Flash.message(res.success, 'bg-success');
-                localStorage.setItem('quizwitAdminEmail', '');
-                localStorage.setItem('quizwitAdminPassword', '');
             }
             else {
                 Flash.message(res.error, 'bg-danger');
